@@ -40,7 +40,8 @@ namespace :test do
       'test/setup',
       'test/testDiceBotLoaders.rb',
       'test/testDiceBotPrefixesCompatibility.rb',
-      'test/test_srs_help_messages.rb'
+      'test/test_srs_help_messages.rb',
+      'test/sparse_table_test.rb',
     ]
   end
 end
