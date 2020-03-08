@@ -164,7 +164,7 @@ class SparseTable
   # @return [Item]
   # @raise [ArgumentError] 値が大きすぎる場合
   def fetch(value)
-    item = @items.bsearch { |i| value <= i.max }
+    item = @items.find { |i| i.max >= value }
     unless item
       raise ArgumentError, "value is too big: #{value}"
     end
